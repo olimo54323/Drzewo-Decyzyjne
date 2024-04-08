@@ -1,0 +1,234 @@
+\hypertarget{model_8h}{}\doxysection{model.\+h File Reference}
+\label{model_8h}\index{model.h@{model.h}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include \char`\"{}struktury.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}widok.\+h\char`\"{}}\newline
+Include dependency graph for model.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{model_8h_a1f28d189cddc6e9216f2c78e842ba0bd}{czy\+\_\+liczba}} (const string \&wyraz)
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdzająca czy ciąg wyrazów to liczba zmiennoprzecinkowa. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{model_8h_a7582cc350c13d2eb8f730c712056699e}{czy\+\_\+liczba\+\_\+naturalna}} (const string \&wyraz)
+\begin{DoxyCompactList}\small\item\em Procedura sprawdzajaca czy ciąg znaków to liczba naturalna. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8h_abf13004b51876e9c20b074a2ccabfc3c}{przypisywanie\+\_\+do\+\_\+drzewa}} (vector$<$ \mbox{\hyperlink{structdecyzja}{decyzja}} $>$ \&drzewo, string $\ast$tablica, const int \&linia)
+\begin{DoxyCompactList}\small\item\em Procedura wpisująca dane do drzewa. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8h_a80db7d93f43ae47f21fc023d59f96bb7}{przypisywanie\+\_\+do\+\_\+warunku}} (vector$<$ vector$<$ float $>$$>$ \&przypadki, vector$<$ float $>$ \&wiersz)
+\begin{DoxyCompactList}\small\item\em Procedura wpisująca dane do wektora wektorów przypadków. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8h_a9e2a4727644386281d96d9f2a7928182}{dzielenie\+\_\+warunku}} (\mbox{\hyperlink{structdecyzja}{decyzja}} \&obiekt, string \&warunek)
+\begin{DoxyCompactList}\small\item\em Procedura zmieniająca ciąg znaków warunku na pola struktury. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8h_a4e99974f1ced4533a8d9c5e7467e0ec5}{generowanie\+\_\+pliku\+\_\+wyjscia}} (unordered\+\_\+map$<$ string, vector$<$ vector$<$ float $>$$>$$>$ \&mapa, ofstream \&wyjscie)
+\begin{DoxyCompactList}\small\item\em Procedura generująca plik wyjściowy z mapy asocjacyjnej. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{model_8h_a31002710229de206c616fe193815453f}{warunek\+\_\+galezi}} (int nr\+\_\+przypadku, int nr\+\_\+galezi, int nr\+\_\+war\+\_\+atrybutu, const vector$<$ vector$<$ float $>$$>$ \&przypadek, const vector$<$ \mbox{\hyperlink{structdecyzja}{decyzja}} $>$ \&drzewo)
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdzająca warunek gałęzi drzewa z atrybutem przypadku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8h_a87fab9b25c718fb10643061235a43281}{dodawanie\+\_\+do\+\_\+mapy}} (unordered\+\_\+map$<$ string, vector$<$ vector$<$ float $>$$>$$>$ \&mapa, const string \&klucz, const vector$<$ float $>$ \&przypadki)
+\begin{DoxyCompactList}\small\item\em Procedura wpisująca wektor przypadku do mapy asocjacyjnej. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{model_8h_a06655ef0aefacc01d183d9eb9e74f22a}{postepowanie\+\_\+drzewa}} (int nr\+\_\+galezi, const int nr\+\_\+przypadku, const vector$<$ \mbox{\hyperlink{structdecyzja}{decyzja}} $>$ \&drzewo, const vector$<$ string $>$ \&atrybut, const vector$<$ vector$<$ float $>$$>$ \&przypadek, unordered\+\_\+map$<$ string, vector$<$ vector$<$ float $>$$>$$>$ \&przyporzadkowane\+\_\+przypadki)
+\begin{DoxyCompactList}\small\item\em Funkcja poruszania się programu po drzewie decyzyjnym. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{model_8h_a1f28d189cddc6e9216f2c78e842ba0bd}\label{model_8h_a1f28d189cddc6e9216f2c78e842ba0bd}} 
+\index{model.h@{model.h}!czy\_liczba@{czy\_liczba}}
+\index{czy\_liczba@{czy\_liczba}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{czy\_liczba()}{czy\_liczba()}}
+{\footnotesize\ttfamily bool czy\+\_\+liczba (\begin{DoxyParamCaption}\item[{const string \&}]{wyraz }\end{DoxyParamCaption})}
+
+
+
+Funkcja sprawdzająca czy ciąg wyrazów to liczba zmiennoprzecinkowa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wyraz} & -\/ ciag znaków, który ma zostać sprawdzony \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ jeśli wyraz jest liczbą 
+
+false -\/ jeśli wyraz nie jest liczbą 
+\end{DoxyReturn}
+\mbox{\Hypertarget{model_8h_a7582cc350c13d2eb8f730c712056699e}\label{model_8h_a7582cc350c13d2eb8f730c712056699e}} 
+\index{model.h@{model.h}!czy\_liczba\_naturalna@{czy\_liczba\_naturalna}}
+\index{czy\_liczba\_naturalna@{czy\_liczba\_naturalna}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{czy\_liczba\_naturalna()}{czy\_liczba\_naturalna()}}
+{\footnotesize\ttfamily bool czy\+\_\+liczba\+\_\+naturalna (\begin{DoxyParamCaption}\item[{const string \&}]{wyraz }\end{DoxyParamCaption})}
+
+
+
+Procedura sprawdzajaca czy ciąg znaków to liczba naturalna. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wyraz} & -\/ ciąg znaków, który ma zostać sprawdzony \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ jeśli wyraz jest liczbą 
+
+false -\/ jeśli wyraz nie jest liczbą 
+\end{DoxyReturn}
+\mbox{\Hypertarget{model_8h_a87fab9b25c718fb10643061235a43281}\label{model_8h_a87fab9b25c718fb10643061235a43281}} 
+\index{model.h@{model.h}!dodawanie\_do\_mapy@{dodawanie\_do\_mapy}}
+\index{dodawanie\_do\_mapy@{dodawanie\_do\_mapy}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{dodawanie\_do\_mapy()}{dodawanie\_do\_mapy()}}
+{\footnotesize\ttfamily void dodawanie\+\_\+do\+\_\+mapy (\begin{DoxyParamCaption}\item[{unordered\+\_\+map$<$ string, vector$<$ vector$<$ float $>$$>$$>$ \&}]{mapa,  }\item[{const string \&}]{klucz,  }\item[{const vector$<$ float $>$ \&}]{przypadki }\end{DoxyParamCaption})}
+
+
+
+Procedura wpisująca wektor przypadku do mapy asocjacyjnej. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mapa} & -\/ mapa asocjacyjna, do której wpisywane sa wektory przypadków \\
+\hline
+{\em klucz} & -\/ klucz mapy asocjacyjnej \\
+\hline
+{\em przpadki} & -\/ wektor wartości przypadku, który jest wpisywany do mapy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{model_8h_a9e2a4727644386281d96d9f2a7928182}\label{model_8h_a9e2a4727644386281d96d9f2a7928182}} 
+\index{model.h@{model.h}!dzielenie\_warunku@{dzielenie\_warunku}}
+\index{dzielenie\_warunku@{dzielenie\_warunku}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{dzielenie\_warunku()}{dzielenie\_warunku()}}
+{\footnotesize\ttfamily void dzielenie\+\_\+warunku (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdecyzja}{decyzja}} \&}]{obiekt,  }\item[{string \&}]{warunek }\end{DoxyParamCaption})}
+
+
+
+Procedura zmieniająca ciąg znaków warunku na pola struktury. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obiekt} & -\/ obiekt wektora struktur, do którego wpisywane są wartości \\
+\hline
+{\em warunek} & -\/ ciąg znaków warunku, pobrane z pliku tekstowego \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{model_8h_a4e99974f1ced4533a8d9c5e7467e0ec5}\label{model_8h_a4e99974f1ced4533a8d9c5e7467e0ec5}} 
+\index{model.h@{model.h}!generowanie\_pliku\_wyjscia@{generowanie\_pliku\_wyjscia}}
+\index{generowanie\_pliku\_wyjscia@{generowanie\_pliku\_wyjscia}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{generowanie\_pliku\_wyjscia()}{generowanie\_pliku\_wyjscia()}}
+{\footnotesize\ttfamily void generowanie\+\_\+pliku\+\_\+wyjscia (\begin{DoxyParamCaption}\item[{unordered\+\_\+map$<$ string, vector$<$ vector$<$ float $>$$>$$>$ \&}]{mapa,  }\item[{ofstream \&}]{wyjscie }\end{DoxyParamCaption})}
+
+
+
+Procedura generująca plik wyjściowy z mapy asocjacyjnej. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mapa} & -\/ mapa asocjacyjna, z której wpisywane sa wektory przypadków \\
+\hline
+{\em wyjscie} & -\/ strumień wyjścia pliku tekstowego \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{model_8h_a06655ef0aefacc01d183d9eb9e74f22a}\label{model_8h_a06655ef0aefacc01d183d9eb9e74f22a}} 
+\index{model.h@{model.h}!postepowanie\_drzewa@{postepowanie\_drzewa}}
+\index{postepowanie\_drzewa@{postepowanie\_drzewa}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{postepowanie\_drzewa()}{postepowanie\_drzewa()}}
+{\footnotesize\ttfamily int postepowanie\+\_\+drzewa (\begin{DoxyParamCaption}\item[{int}]{nr\+\_\+galezi,  }\item[{const int}]{nr\+\_\+przypadku,  }\item[{const vector$<$ \mbox{\hyperlink{structdecyzja}{decyzja}} $>$ \&}]{drzewo,  }\item[{const vector$<$ string $>$ \&}]{atrybut,  }\item[{const vector$<$ vector$<$ float $>$$>$ \&}]{przypadek,  }\item[{unordered\+\_\+map$<$ string, vector$<$ vector$<$ float $>$$>$$>$ \&}]{przyporzadkowane\+\_\+przypadki }\end{DoxyParamCaption})}
+
+
+
+Funkcja poruszania się programu po drzewie decyzyjnym. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nr\+\_\+galezi} & -\/ indeks gałęzi, której warunek jest rozpatrywany \\
+\hline
+{\em nr\+\_\+przypadku} & -\/ indeks wektora, sprawdzanego przypadku \\
+\hline
+{\em drzewo} & -\/ wektor struktur zawierający drzewo decyzyjne \\
+\hline
+{\em atrybut} & -\/ wektor atrybutów, z którym porównywany jest atrybut warunku gałęzi drzewa \\
+\hline
+{\em przypadek} & -\/ wektor przechowujący wektor wartości atrybutów przypadku \\
+\hline
+{\em przyporzadkowane\+\_\+przypadki} & -\/ mapa asocjacyjna zawierająca jako klucz odpowiednie etykiety, a jako wartość wektor wektorów przechowujący przypadki \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ gdy brak błędów 
+
+13 -\/ gdy podano nieprawidłowe dane 
+\end{DoxyReturn}
+\mbox{\Hypertarget{model_8h_abf13004b51876e9c20b074a2ccabfc3c}\label{model_8h_abf13004b51876e9c20b074a2ccabfc3c}} 
+\index{model.h@{model.h}!przypisywanie\_do\_drzewa@{przypisywanie\_do\_drzewa}}
+\index{przypisywanie\_do\_drzewa@{przypisywanie\_do\_drzewa}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{przypisywanie\_do\_drzewa()}{przypisywanie\_do\_drzewa()}}
+{\footnotesize\ttfamily void przypisywanie\+\_\+do\+\_\+drzewa (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{structdecyzja}{decyzja}} $>$ \&}]{drzewo,  }\item[{string $\ast$}]{tablica,  }\item[{const int \&}]{linia }\end{DoxyParamCaption})}
+
+
+
+Procedura wpisująca dane do drzewa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em drzewo} & -\/ wektor struktur przechowujący $<$numer gałęzi$>$ $<$warunek$>$ $<$wartość jeśli tak$>$ $<$wartość jeśli nie$>$ \\
+\hline
+{\em $\ast$tablica} & -\/ tablica pomocnicza do wpisywania danych do struktury \\
+\hline
+{\em linia} & -\/ numer gałęzi \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{model_8h_a80db7d93f43ae47f21fc023d59f96bb7}\label{model_8h_a80db7d93f43ae47f21fc023d59f96bb7}} 
+\index{model.h@{model.h}!przypisywanie\_do\_warunku@{przypisywanie\_do\_warunku}}
+\index{przypisywanie\_do\_warunku@{przypisywanie\_do\_warunku}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{przypisywanie\_do\_warunku()}{przypisywanie\_do\_warunku()}}
+{\footnotesize\ttfamily void przypisywanie\+\_\+do\+\_\+warunku (\begin{DoxyParamCaption}\item[{vector$<$ vector$<$ float $>$$>$ \&}]{przypadki,  }\item[{vector$<$ float $>$ \&}]{wiersz }\end{DoxyParamCaption})}
+
+
+
+Procedura wpisująca dane do wektora wektorów przypadków. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em przypadki} & -\/ wektor wektorów przechowujący wartości atrybutów przypadków \\
+\hline
+{\em wiersz} & -\/ wektor pomocniczy do wpisywania danych do wektora wektorów \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{model_8h_a31002710229de206c616fe193815453f}\label{model_8h_a31002710229de206c616fe193815453f}} 
+\index{model.h@{model.h}!warunek\_galezi@{warunek\_galezi}}
+\index{warunek\_galezi@{warunek\_galezi}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{warunek\_galezi()}{warunek\_galezi()}}
+{\footnotesize\ttfamily bool warunek\+\_\+galezi (\begin{DoxyParamCaption}\item[{int}]{nr\+\_\+przypadku,  }\item[{int}]{nr\+\_\+galezi,  }\item[{int}]{nr\+\_\+war\+\_\+atrybutu,  }\item[{const vector$<$ vector$<$ float $>$$>$ \&}]{przypadek,  }\item[{const vector$<$ \mbox{\hyperlink{structdecyzja}{decyzja}} $>$ \&}]{drzewo }\end{DoxyParamCaption})}
+
+
+
+Funkcja sprawdzająca warunek gałęzi drzewa z atrybutem przypadku. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nr\+\_\+przypadku} & -\/ indeks wektora, sprawdzanego przypadku \\
+\hline
+{\em nr\+\_\+galezi} & -\/ indeks gałęzi, której warunek jest rozpatrywany \\
+\hline
+{\em przypadek} & -\/ wektor przechowujący wektor wartości atrybutów przypadku \\
+\hline
+{\em drzewo} & -\/ wektor struktur przechowyjący warunki gałęzi \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ jeśli warunek jest spełniony 
+
+false -\/ jeśli warunek nie jest spełniony 
+\end{DoxyReturn}

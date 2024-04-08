@@ -1,0 +1,78 @@
+\hypertarget{widok_8h}{}\doxysection{widok.\+h File Reference}
+\label{widok_8h}\index{widok.h@{widok.h}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}struktury.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}model.\+h\char`\"{}}\newline
+Include dependency graph for widok.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{widok_8h_ae0ec3137d3edb459c5cc3b63c78d6dd7}{poprawnosc\+\_\+odczytu}} (ifstream \&wejscie)
+\item 
+int \mbox{\hyperlink{widok_8h_a9b2babf2b1fcadab3b36dc9302e6c61e}{czytanie\+\_\+pliku\+\_\+warunkowego}} (vector$<$ \mbox{\hyperlink{structdecyzja}{decyzja}} $>$ \&drzewo, ifstream \&wejscie)
+\item 
+int \mbox{\hyperlink{widok_8h_a3fbc84b5da1feaee5e22abccd003ad4e}{czytanie\+\_\+pliku\+\_\+atrybutu}} (vector$<$ string $>$ \&atrybut, vector$<$ vector$<$ float $>$$>$ \&przypadki, ifstream \&wejscie)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{widok_8h_a3fbc84b5da1feaee5e22abccd003ad4e}\label{widok_8h_a3fbc84b5da1feaee5e22abccd003ad4e}} 
+\index{widok.h@{widok.h}!czytanie\_pliku\_atrybutu@{czytanie\_pliku\_atrybutu}}
+\index{czytanie\_pliku\_atrybutu@{czytanie\_pliku\_atrybutu}!widok.h@{widok.h}}
+\doxysubsubsection{\texorpdfstring{czytanie\_pliku\_atrybutu()}{czytanie\_pliku\_atrybutu()}}
+{\footnotesize\ttfamily int czytanie\+\_\+pliku\+\_\+atrybutu (\begin{DoxyParamCaption}\item[{vector$<$ string $>$ \&}]{atrybut,  }\item[{vector$<$ vector$<$ float $>$$>$ \&}]{przypadki,  }\item[{ifstream \&}]{wejscie }\end{DoxyParamCaption})}
+
+Funkcja czytająca i wpisująca do programu zawartość pliku wejściowego 
+\begin{DoxyParams}{Parameters}
+{\em atrybut} & -\/ wektor przechowujący nazwy atrybutów \\
+\hline
+{\em przypadki} & -\/ wektor wartości atrybutów danego przypadku \\
+\hline
+{\em wejscie} & -\/ czytany plik tekstowy przypadków \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ gdy brak błędów 
+
+13 -\/ gdy podano nieprawidłowe dane 
+\end{DoxyReturn}
+\mbox{\Hypertarget{widok_8h_a9b2babf2b1fcadab3b36dc9302e6c61e}\label{widok_8h_a9b2babf2b1fcadab3b36dc9302e6c61e}} 
+\index{widok.h@{widok.h}!czytanie\_pliku\_warunkowego@{czytanie\_pliku\_warunkowego}}
+\index{czytanie\_pliku\_warunkowego@{czytanie\_pliku\_warunkowego}!widok.h@{widok.h}}
+\doxysubsubsection{\texorpdfstring{czytanie\_pliku\_warunkowego()}{czytanie\_pliku\_warunkowego()}}
+{\footnotesize\ttfamily int czytanie\+\_\+pliku\+\_\+warunkowego (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{structdecyzja}{decyzja}} $>$ \&}]{drzewo,  }\item[{ifstream \&}]{wejscie }\end{DoxyParamCaption})}
+
+Funkcja czytająca i wpisująca do programu zawartość pliku drzewa 
+\begin{DoxyParams}{Parameters}
+{\em drzewo} & -\/ wektor struktur przechowujący $<$numer gałęzi$>$ $<$warunek$>$ $<$wartość jeśli tak$>$ $<$wartość jeśli nie$>$ \\
+\hline
+{\em wejscie} & -\/ czytany plik tekstowy z architekturą drzewa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ gdy brak błędów 
+
+13 -\/ gdy podano nieprawidłowe dane 
+\end{DoxyReturn}
+\mbox{\Hypertarget{widok_8h_ae0ec3137d3edb459c5cc3b63c78d6dd7}\label{widok_8h_ae0ec3137d3edb459c5cc3b63c78d6dd7}} 
+\index{widok.h@{widok.h}!poprawnosc\_odczytu@{poprawnosc\_odczytu}}
+\index{poprawnosc\_odczytu@{poprawnosc\_odczytu}!widok.h@{widok.h}}
+\doxysubsubsection{\texorpdfstring{poprawnosc\_odczytu()}{poprawnosc\_odczytu()}}
+{\footnotesize\ttfamily bool poprawnosc\+\_\+odczytu (\begin{DoxyParamCaption}\item[{ifstream \&}]{wejscie }\end{DoxyParamCaption})}
+
+Funkcja sprawdzająca otwarcie i poprawność odczytu pliku 
+\begin{DoxyParams}{Parameters}
+{\em wejscie} & -\/ czytany plik tekstowy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ jeżeli plik jest dobry 
+
+false -\/ jeżeli jest problem z odczytem 
+\end{DoxyReturn}

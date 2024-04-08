@@ -1,0 +1,107 @@
+\begin{theindex}
+
+  \item {czy\_liczba}
+    \subitem {model.cpp}, \hyperpage{8}
+    \subitem {model.h}, \hyperpage{13}
+  \item {czy\_liczba\_naturalna}
+    \subitem {model.cpp}, \hyperpage{8}
+    \subitem {model.h}, \hyperpage{13}
+  \item {czytanie\_pliku\_atrybutu}
+    \subitem {widok.cpp}, \hyperpage{17}
+    \subitem {widok.h}, \hyperpage{19}
+  \item {czytanie\_pliku\_warunkowego}
+    \subitem {widok.cpp}, \hyperpage{17}
+    \subitem {widok.h}, \hyperpage{19}
+
+  \indexspace
+
+  \item {d\_atrybut}
+    \subitem {decyzja}, \hyperpage{5}
+  \item {d\_id}
+    \subitem {decyzja}, \hyperpage{6}
+  \item {d\_nie}
+    \subitem {decyzja}, \hyperpage{6}
+  \item {d\_tak}
+    \subitem {decyzja}, \hyperpage{6}
+  \item {d\_wartosc}
+    \subitem {decyzja}, \hyperpage{6}
+  \item {d\_znak}
+    \subitem {decyzja}, \hyperpage{6}
+  \item {decyzja}, \hyperpage{5}
+    \subitem {d\_atrybut}, \hyperpage{5}
+    \subitem {d\_id}, \hyperpage{6}
+    \subitem {d\_nie}, \hyperpage{6}
+    \subitem {d\_tak}, \hyperpage{6}
+    \subitem {d\_wartosc}, \hyperpage{6}
+    \subitem {d\_znak}, \hyperpage{6}
+  \item {dodawanie\_do\_mapy}
+    \subitem {model.cpp}, \hyperpage{9}
+    \subitem {model.h}, \hyperpage{13}
+  \item {dzielenie\_warunku}
+    \subitem {model.cpp}, \hyperpage{9}
+    \subitem {model.h}, \hyperpage{14}
+
+  \indexspace
+
+  \item {generowanie\_pliku\_wyjscia}
+    \subitem {model.cpp}, \hyperpage{9}
+    \subitem {model.h}, \hyperpage{14}
+
+  \indexspace
+
+  \item {main.cpp}, \hyperpage{7}
+  \item {model.cpp}, \hyperpage{7}
+    \subitem {czy\_liczba}, \hyperpage{8}
+    \subitem {czy\_liczba\_naturalna}, \hyperpage{8}
+    \subitem {dodawanie\_do\_mapy}, \hyperpage{9}
+    \subitem {dzielenie\_warunku}, \hyperpage{9}
+    \subitem {generowanie\_pliku\_wyjscia}, \hyperpage{9}
+    \subitem {postepowanie\_drzewa}, \hyperpage{10}
+    \subitem {przypisywanie\_do\_drzewa}, \hyperpage{10}
+    \subitem {przypisywanie\_do\_warunku}, \hyperpage{11}
+    \subitem {warunek\_galezi}, \hyperpage{11}
+  \item {model.h}, \hyperpage{12}
+    \subitem {czy\_liczba}, \hyperpage{13}
+    \subitem {czy\_liczba\_naturalna}, \hyperpage{13}
+    \subitem {dodawanie\_do\_mapy}, \hyperpage{13}
+    \subitem {dzielenie\_warunku}, \hyperpage{14}
+    \subitem {generowanie\_pliku\_wyjscia}, \hyperpage{14}
+    \subitem {postepowanie\_drzewa}, \hyperpage{14}
+    \subitem {przypisywanie\_do\_drzewa}, \hyperpage{15}
+    \subitem {przypisywanie\_do\_warunku}, \hyperpage{15}
+    \subitem {warunek\_galezi}, \hyperpage{16}
+
+  \indexspace
+
+  \item {poprawnosc\_odczytu}
+    \subitem {widok.cpp}, \hyperpage{18}
+    \subitem {widok.h}, \hyperpage{19}
+  \item {postepowanie\_drzewa}
+    \subitem {model.cpp}, \hyperpage{10}
+    \subitem {model.h}, \hyperpage{14}
+  \item {przypisywanie\_do\_drzewa}
+    \subitem {model.cpp}, \hyperpage{10}
+    \subitem {model.h}, \hyperpage{15}
+  \item {przypisywanie\_do\_warunku}
+    \subitem {model.cpp}, \hyperpage{11}
+    \subitem {model.h}, \hyperpage{15}
+
+  \indexspace
+
+  \item {struktury.h}, \hyperpage{16}
+
+  \indexspace
+
+  \item {warunek\_galezi}
+    \subitem {model.cpp}, \hyperpage{11}
+    \subitem {model.h}, \hyperpage{16}
+  \item {widok.cpp}, \hyperpage{17}
+    \subitem {czytanie\_pliku\_atrybutu}, \hyperpage{17}
+    \subitem {czytanie\_pliku\_warunkowego}, \hyperpage{17}
+    \subitem {poprawnosc\_odczytu}, \hyperpage{18}
+  \item {widok.h}, \hyperpage{18}
+    \subitem {czytanie\_pliku\_atrybutu}, \hyperpage{19}
+    \subitem {czytanie\_pliku\_warunkowego}, \hyperpage{19}
+    \subitem {poprawnosc\_odczytu}, \hyperpage{19}
+
+\end{theindex}
